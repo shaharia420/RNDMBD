@@ -145,11 +145,11 @@ logo=(f"""
             |_____/|_|  |_/_/    \_\_|  |_|\____/ 
             
 <-------------------------------------------------------->
-| {G} OWNER:> GAMING SHAHO
+| {B} OWNER:> GAMING SHAHO
 | {B} FACEBOOK PAGE :> GAMING SHAHO
-| {G} WHATSAPP :> 01951153459
+| {B} WHATSAPP :> 01951153459
 | {B} TOOL :> RANDOM
-| {G} STATUS :> FREE 
+| {B} STATUS :> FREE 
 <--------------------------------------------------------> """)
 os.system('espeak -a 300 "installing starting free hack "')
 os.system('espeak -a 300 "author GAMING SHAHO "')
